@@ -1,0 +1,22 @@
+const radius = [2, 3, 4, 8, 9];
+
+const area = (radius) => Math.PI * radius * radius;
+
+const circum = function(radius){
+    return 2 * Math.PI * radius;
+}
+const diameter = function(radius){
+    return 2 * radius;
+}
+const calculate = function(radius, choose){
+    const output = [];
+    for(let i = 0; i <= radius.length; i++){
+        output.push(choose(radius[i]));
+    }   
+    return output;
+}
+
+console.log("using map ", radius.map(area));
+console.log(calculate(radius, area));
+console.log(calculate(radius, circum));
+console.log(calculate(radius, diameter));
