@@ -7,7 +7,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
   "browserslist" : [
-    "Last 2 versions" 
+    "last 2 version",
+    "last 2 chrome version"
   ]
 }
