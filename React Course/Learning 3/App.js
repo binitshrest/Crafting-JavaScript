@@ -1,5 +1,14 @@
 
-
+{/* <div id = "parent">
+        <div id = "child1">
+            <h1>I am h1 tag</h1> //sibling 1
+            <h2>I am h2 tag </h2> //sibling 2
+        </div>
+        <div id = "child2">
+            <h1>I am h1 tag</h1> //sibling 1
+            <h2>I am h2 tag </h2> //sibling 2
+        </div>
+    </div> */}
                         //           tag    attribute    children div nesting h1 
 const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("div", { id: "child1" }, [   //use array for siblings
